@@ -9,13 +9,13 @@
     <title>My blog</title>
 </head>
 <body>
-    <?php foreach ($posts as $post): ?>
+    @foreach ($posts as $post)
         <article>
-            <a href="/posts/<?= $post->slug; ?>">
-                <h1><?= $post->title; ?></h1>
+            <a href="/posts/{{ $post->slug }}">
+                <h1>{{ $post->title }}</h1>
             </a>
-            <div><?= $post->expert; ?></div>
+            <div>{{ $post->expert }}</div>
         </article>
-    <?php endforeach;?>
+    @endforeach
 </body>
 </html>
