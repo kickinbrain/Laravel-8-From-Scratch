@@ -8,11 +8,11 @@
                 {!! $post->body !!}
             </div>
              <p>
-                 By <a href="#">
-                   {{ $post->user->name }}
+                 By <a href="/authors/{{$post->author->user_name}}">
+                     {{ $post->author->name }}
                  </a> in
                  <a href="categories/{{ $post->category->slug }}">
-                    {{ $post->category->name }}
+                     {{ $post->category->name }}
                  </a>
              </p>
         </article>
