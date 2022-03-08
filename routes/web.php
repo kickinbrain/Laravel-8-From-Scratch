@@ -20,7 +20,7 @@
 
 Route::get('/', function () {
 
-    $posts = Post::latest()->with('category', 'author')->get();
+    $posts = Post::latest()->get();
 
     return view('posts',[
         'posts' => $posts
@@ -41,6 +41,6 @@ Route::get('categories/{category:slug}', function (Category $category){
 
 Route::get('authors/{author:user_name}', function (User $author){
     return view('posts', [
-       'posts' => $author->posts
+        'posts' => $author->posts
     ]);
 });
