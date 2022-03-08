@@ -1,5 +1,5 @@
 <x-layout>
-    <x-slot name="content">
+  {{--  <x-slot name="content">
         @foreach ($posts as $post)
             <article>
                 <a href="/posts/{{ $post->slug }}">
@@ -16,5 +16,25 @@
                 <div>{{ $post->excerpt }}</div>
             </article>
         @endforeach
-    </x-slot>
+    </x-slot>--}}
+
+
+    @include('_posts-header')
+
+    <main class="max-w-6xl mx-auto mt-20 space-y-8">
+            <x-featured-post-card />
+        <div class="lg:grid lg:grid-cols-2">
+            <x-post-card />
+            <x-post-card />
+        </div>
+
+        <div class="lg:grid lg:grid-cols-3">
+            <x-post-card />
+            <x-post-card />
+            <x-post-card />
+        </div>
+
+    </main>
+
+
 </x-layout>
