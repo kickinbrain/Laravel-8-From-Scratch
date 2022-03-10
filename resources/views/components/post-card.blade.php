@@ -9,11 +9,7 @@
         </div>
         <div class="flex-1 mt-8 flex flex-col justify-between">
             <header>
-                <div>
-                    <a href="/categories/{{ $post->category->slug }}" class="px-3 py-1 border rounded-full border-blue-300 text-blue-300 text-xs uppercase font-semibold">
-                        {{ $post->category->name }}
-                    </a>
-                </div>
+                <x-category-button :category="$post->category" />
 
                 <div class="mt-4">
                     <h1 class="text-3xl">
