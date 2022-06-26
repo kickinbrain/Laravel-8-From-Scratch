@@ -56,6 +56,9 @@ return [
 
     'asset_url' => env('ASSET_URL', null),
 
+    'Debugbar' => Barryvdh\Debugbar\Facades\Debugbar::class,
+
+
     /*
     |--------------------------------------------------------------------------
     | Application Timezone
