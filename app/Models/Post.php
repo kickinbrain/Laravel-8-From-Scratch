@@ -29,11 +29,15 @@ class Post
         $this->body = $body;
     }
 
-    public static function find($slug)
+    public static function findOrFail($slug)
     {
-        $posts = static::all();
+        $post = static::all()->firstWhere('slug', $slug);
 
-        return $posts->firstWhere('slug', $slug);
+        if(! $post){
+            throw new ModelNotFoundException();
+        }
+
+        return $post;
 
     }
 
