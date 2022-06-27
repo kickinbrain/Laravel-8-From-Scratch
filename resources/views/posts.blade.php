@@ -10,16 +10,18 @@
 </head>
 <body>
 
-<?php foreach ($posts as $post) : ?>
+@foreach ($posts as $post)
     <article>
-        <h1><?= $post->title ?></h1>
+        <h1>
+            {{ $post->title }}
+        </h1>
 
         <div>
-            <?= $post->excerpt; ?>
-            <a href="posts/<?= $post->slug; ?>">Read more</a>
+            {{ $post->excerpt }}
+            <a href="posts/{{ $post->slug }}">Read more</a>
         </div>
     </article>
-<?php endforeach;?>
+@endforeach
 
 
 </body>
