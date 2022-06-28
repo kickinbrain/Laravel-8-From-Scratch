@@ -8,7 +8,7 @@
 
                 <div>
                     {{ $post->excerpt }}
-                    <a href="posts/{{ $post->slug }}">Read more</a>
+                    <a href="posts/{{ $post->id }}">Read more</a>
                 </div>
             </article>
         @endforeach
