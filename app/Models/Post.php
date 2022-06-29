@@ -10,7 +10,7 @@ class Post extends Model
     use HasFactory;
 
     #protected $fillable = ['title', 'excerpt','body', 'slug'];
-    protected $guarded = ['id'];
+    protected $guarded = [];
 
     public function getRouteKeyName()
     {

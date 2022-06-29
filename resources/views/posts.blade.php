@@ -7,14 +7,14 @@
                 </h1>
 
                 <p>
-                    <a href="#">
+                    <a href="/categories/{{ $post->category->id }}">
                         {{ $post->category->name }}
                     </a>
                 </p>
 
                 <div>
                     {{ $post->excerpt }}
-                    <a href="posts/{{ $post->slug }}">Read more</a>
+                    <a href="/posts/{{ $post->slug }}">Read more</a>
                 </div>
             </article>
         @endforeach

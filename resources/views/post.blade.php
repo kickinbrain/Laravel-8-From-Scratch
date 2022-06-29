@@ -7,15 +7,11 @@
             <p>
                 {!! $post->body !!}
             </p>
-
-
             <p>
-                <a href="#">
+                <a href="/categories/{{ $post->category->id }}">
                     {{ $post->category->name }}
                 </a>
             </p>
-
-
         </article>
 
         <a href="/">Go back</a>
