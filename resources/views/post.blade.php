@@ -7,6 +7,15 @@
             <p>
                 {!! $post->body !!}
             </p>
+
+
+            <p>
+                <a href="#">
+                    {{ $post->category->name }}
+                </a>
+            </p>
+
+
         </article>
 
         <a href="/">Go back</a>

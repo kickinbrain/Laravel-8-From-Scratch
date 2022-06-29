@@ -6,6 +6,12 @@
                     {{ $post->title }}
                 </h1>
 
+                <p>
+                    <a href="#">
+                        {{ $post->category->name }}
+                    </a>
+                </p>
+
                 <div>
                     {{ $post->excerpt }}
                     <a href="posts/{{ $post->slug }}">Read more</a>
