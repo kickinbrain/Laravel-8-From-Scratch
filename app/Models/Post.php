@@ -11,6 +11,12 @@ class Post extends Model
 
     #protected $fillable = ['title', 'excerpt','body', 'slug'];
     protected $guarded = ['id'];
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
+
 }
 
 
