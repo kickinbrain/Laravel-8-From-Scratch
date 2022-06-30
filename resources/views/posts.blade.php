@@ -11,6 +11,11 @@
                         {{ $post->category->name }}
                     </a>
                 </p>
+                <p>
+                    By <a href="">
+                        {{ $post->author->name }}
+                    </a>
+                </p>
 
                 <div>
                     {{ $post->excerpt }}
