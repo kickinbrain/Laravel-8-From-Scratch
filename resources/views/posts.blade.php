@@ -12,7 +12,7 @@
                     </a>
                 </p>
                 <p>
-                    By <a href="">
+                    By <a href="/authors/{{ $post->author->user_name }}">
                         {{ $post->author->name }}
                     </a>
                 </p>

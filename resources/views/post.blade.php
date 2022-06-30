@@ -7,12 +7,14 @@
             <p>
                 {!! $post->body !!}
             </p>
-            <p>
-                By <a href="#">{{ $post->author->name }}</a><br>
+                <p>
+                    By <a href="/authors/{{ $post->author->user_name }}">
+                        {{ $post->author->name }}
+                    </a>
+                </p>
                 <a href="/categories/{{ $post->category->slug }}">
                     {{ $post->category->name }}
                 </a>
-            </p>
         </article>
 
         <a href="/">Go back</a>
