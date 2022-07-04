@@ -14,6 +14,8 @@
         </div>
 
     </main>
+
+    
    {{-- <x-slot name="content">
         @foreach ($posts as $post)
             <article>
