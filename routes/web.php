@@ -19,9 +19,9 @@ use Spatie\YamlFrontMatter\YamlFrontMatter;
 */
 
 Route::get('/', function () {
-       return view('posts', [
-            'posts' => Post::latest()->get()
-        ]);
+    return view('posts', [
+        'posts' => Post::latest()->get()
+    ]);
 });
 
 Route::get('posts/{post}', function (Post $post){
